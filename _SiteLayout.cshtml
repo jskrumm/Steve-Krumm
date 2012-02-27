@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Steve Krumm</title>
+        @RenderPage("~/_commonCSS.cshtml")
+    </head>
+    <body>
+        <div id="page">
+           @RenderPage("~/_header.cshtml")
+            <div id="main-img-wrapper">
+                <img src="@Href("~/images/rc_vally2.png")" alt=""/>
+            </div>
+            <div id="main">
+                <div id="content">
+                    <h1>@Page.Title</h1>
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        @RenderPage("~/_footer.cshtml")
+        @RenderPage("~/_commonJS.cshtml")
+    </body>
+</html>
