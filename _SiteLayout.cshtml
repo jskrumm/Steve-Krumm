@@ -2,18 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Steve Krumm</title>
+        <title>Beyond Doubt Ministries</title>
         @RenderPage("~/_commonCSS.cshtml")
     </head>
     <body>
+        @RenderPage("~/_header.cshtml")
         <div id="page">
-           @RenderPage("~/_header.cshtml")
+             @RenderPage("~/_mainNav.cshtml")
             <div id="main-img-wrapper">
-                <img src="@Href("~/images/rc_vally2.png")" alt=""/>
+                <img src="@Href("~/images/cross.png")" alt=""/>
             </div>
             <div id="main">
                 <div id="content">
-                    <h1>@Page.Title</h1>
+                    <h2>@Page.Title</h2>
                     @RenderBody()
                 </div>
             </div>

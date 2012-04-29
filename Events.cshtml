@@ -1,5 +1,13 @@
 ﻿@{  
     Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "Steve Krumm - Events";
+    Page.Title = "Events";
 }
-<p>Hello</p>
+<form>
+	<label for="eName">Event Name: </label><input type="text" name="eName" />
+    <label for="cName">Contact Name: </label><input type="text" name="cName" />
+	<label for="email">Contact Email Address: </label><input id="email" type="email" name="email">
+    <label for="tel">Contact Number: </label><input id="tel" type="tel" name="tel" pattern="^(?:\s*)\d{3}-\d{3}-\d{4}(?:\s*)$"/>
+	<label for="startDate">Desired Start Date: </label><input id="startDate" type="date" name="startDate">
+	<label for="endDate">Desired End Date: </label><input id="endDate" type="date" name="endDate">
+    <label for="eDesc">Event Description: </label><input type="text" name="eDesc" />
+</form>
