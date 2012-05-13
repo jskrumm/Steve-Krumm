@@ -61,7 +61,7 @@ h5, h6 {
 #page {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -300px;
+    margin-top: -200px;
     position: relative;
     width: 80%;
     z-index: 1000;
@@ -111,7 +111,10 @@ h5, h6 {
         padding-bottom: 50px;
         float: right;
         width: 80%;
-        height:80%
+        height:80%;
+        z-index:1005;
+        background: transparent;
+        position:relative
     }
     
         #content h2{
@@ -271,7 +274,7 @@ fieldset {
         display: inline;
     }
     
-    fieldset input[type="text"], input[type="password"] {
+    fieldset input{
         border: 1px solid #ccc;
         padding: 2px;
         font-size: 1.2em;
@@ -285,13 +288,20 @@ fieldset {
     }
  
 form{
-    margin-left: 200px;
+    
 }
 form input{
     display:block;
+    margin-bottom: 10px;
 }
 form label{
     float:left
+}
+form textarea{
+    max-height:200px;
+    max-width:600px;
+    width:600px;
+    height: 100px;
 }
  /* Information and errors  
 ----------------------------------------------------------*/  
