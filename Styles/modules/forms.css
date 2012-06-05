@@ -1,0 +1,72 @@
+/* Structure */
+    fieldset {
+        margin: 1em 0;
+        padding: 1em;
+    }
+
+        fieldset legend {
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 0.125em 0.250em 0.500em 0.250em;
+        }
+    
+        fieldset ol {
+            padding: 0;
+        }
+    
+            fieldset ol li {
+                padding-bottom: 0.313em;
+            }
+    
+        fieldset label {
+            display: block;
+        }
+    
+        fieldset label.checkbox {
+            display: inline;
+        }
+    
+    input{
+        padding: 0.125em;
+        font-size: 1.2em;
+        width: 18.750em;
+        display:block;
+        margin-bottom: 0.625em;
+    }
+
+        input[type="submit"] {
+            font-size: 1.2em;
+            padding: 0.313em;
+        }
+
+    .event-form label {
+        float:left
+    }
+        
+    form textarea{
+        max-height:12.500em;
+        max-width:37.500em;
+        width:37.500em;
+        height: 6.250em;
+        margin-bottom: 0.625em;
+    }
+
+/* Skins */
+    /* Default */
+    .default-form-skin fieldset {
+        border: 0.063em solid #CCC;
+    }
+    
+    .default-form-skin input {
+        border: 0.063em solid #ccc;
+        color: #444;
+    }
+    
+    .default-form-skin .error {
+         background: #ffe4e4;
+    }
+    
+    .form-errors-skin .error {
+        color: #be3e16;
+    }
+   

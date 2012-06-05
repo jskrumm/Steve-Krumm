@@ -1,0 +1,15 @@
+/* Structure */
+    footer {
+        padding: 0.625em 0;
+        text-align: center;
+        line-height: normal;
+        margin: auto;
+        font-size: .9em;
+        width: 80%; 
+    }
+/* Skin */
+    .footer-skin {
+        border-top-style:dashed;
+        border-top-color:lightGrey;
+        border-top-width:thin;
+    }

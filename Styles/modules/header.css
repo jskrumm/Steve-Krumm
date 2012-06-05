@@ -1,0 +1,29 @@
+/* Structure */
+    header {
+        height: 18.750em;
+        margin-bottom: 0;
+        padding: 1.250em 0 0;
+        position: relative;
+        z-index: 1;
+    }
+    header h1 {
+        float: left;
+        font-weight: bold;
+        font-size: 3.000em;
+        padding-left: 3.000em;
+        margin: 0;
+        line-height: 2em;
+        width: 100%;
+    }
+/* Skin */
+    .header-skin {
+        background-color: #00569B;
+        border-bottom: 0.125em solid #E5DEFD;
+        color: #000000;
+    }
+    
+    .header-skin h1 {
+        color: #E5DEFD;
+        border: none;
+        text-shadow: 0.063em 0.063em 0.125em #111;
+    }

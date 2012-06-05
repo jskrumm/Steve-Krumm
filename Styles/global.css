@@ -1,10 +1,4 @@
-﻿/*----------------------------------------------------------
-The base color for this template is #5c87b2. If you'd like
-to use a different color start by replacing all instances of
-#5c87b2 with your new color.
-----------------------------------------------------------*/
-
-body {
+﻿body {
     background-color: #B1C349;
     font-size: .85em;
     font-family: 'IM Fell English', serif, Sans-Serif, "Trebuchet MS", Verdana, Helvetica;
@@ -31,31 +25,15 @@ a:active {
     color: #505abc;
 }
 
-/* HEADINGS   
-----------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
-    font-size: 1.5em;
-    color: #000;
-}
+/*
+    List
+*/
 
-h1, h2 {
-    font-size: 2em;
-    padding-bottom: 0;
-    margin-bottom: 0;
+ul, ol {
+    list-style:none;
+    padding: 0;
+    margin: 0;
 }
-
-h3 {
-    font-size: 1.2em;
-}
-
-h4 {
-    font-size: 1.1em;
-}
-
-h5, h6 {
-    font-size: 1em;
-}
-
 /* PRIMARY LAYOUT ELEMENTS   
 ----------------------------------------------------------*/
 #page {
@@ -67,24 +45,7 @@ h5, h6 {
     z-index: 1000;
 }
 
-    header {
-       /* background: #3C6621;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70BF3E', endColorstr='#3C6621') repeat scroll 0 0 transparent;
-        background: -webkit-gradient(linear, left top, left bottom, from(#70BF3E), to(#3C6621)) repeat scroll 0 0 transparent;
-        background: -moz-linear-gradient(270deg, #70BF3E, #3C6621) repeat scroll 0 0 transparent;
-        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-        border-radius: 8px 8px 8px 8px;
-        -webkit-border-radius: 8px 8px 8px 8px;
-        -moz-border-radius: 8px 8px 8px 8px;*/
-        background-color: #00569B;
-        border-bottom: 2px solid #E5DEFD;
-        color: #000000;
-        height: 300px;
-        margin-bottom: 0;
-        padding: 20px 0 0;
-        position: relative;
-        z-index: 1;
-    }
+   
 
     #main-img-wrapper {
         margin-left: -100px;
@@ -114,195 +75,13 @@ h5, h6 {
         height:80%;
         z-index:1005;
         background: transparent;
-        position:relative
+        position:relative;
     }
     
         #content h2{
             margin-bottom: 150px;
         }
-    footer {
-        padding: 10px 0;
-        text-align: center;
-        line-height: normal;
-        margin: auto;
-        font-size: .9em;
-        width: 80%;
-        border-top-style:dashed;
-        border-top-color:lightGrey;
-        border-top-width:thin;
-    }
 
-/* Site Title 
-----------------------------------------------------------*/
-header h1 {
-    float: left;
-    font-weight: bold;
-    padding-left: 125px;
-    margin: 0;
-    color: #E5DEFD;
-    border: none;
-    line-height: 2em;
-    font-size: 48px;
-    width: 100%;
-    
-    /*CSS3 properties*/
-    text-shadow: 1px 1px 2px #111;
-}
-
-/* Login Display  
-----------------------------------------------------------*/
-#login {
-    float: right;
-    font-size: 1.1em;
-    display: block;
-    text-align: right;
-    color: #000;
-}
-
-    #login li {
-        margin: 0;
-        display: inline;
-        list-style: none;
-        padding-left: 5px;
-    }
-    
-    #login a:link, #login a:visited {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    #login a:hover
-    {
-        color: #fff;
-        text-decoration: underline;
-    }
-
-/* Primary Nav   
-----------------------------------------------------------*/
- #page nav ul {
-    line-height: 6em;
-    padding: 0 30px 2px 0;
-    position: relative;
-    margin: 0;
-    text-align: right;
-}
-
-    #page nav ul li {
-        display: inline;
-        list-style: none;
-        background-color: #fff;
-        margin-right: 5px;
-        padding-bottom: 10px;
-        padding-top: 8px;
-        
-        border-radius: 4px 4px 0px 0px;
-        -webkit-border-radius: 4px 4px 0px 0px;
-        -moz-border-radius: 4px 4px 0px 0px;
-        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-    }
-        #page nav ul li.last {
-            border: none;
-        }
-        #page nav ul li a {
-            padding: 10px 20px;
-            font-weight: bold;
-            text-decoration: none;
-            line-height: 2.8em;
-        }
-
-        #page nav ul li:hover,
-        #page nav ul li:active{
-            cursor: pointer;
-            padding-top: 12px;
-        }
-        #page nav ul li a:hover,
-        #page nav ul li a:active{
-            text-decoration: none;
-        }
-
-        #page nav ul li.selected a {
-            background-color: #fff;
-            color: #000;
-        }
-
-/* Footer Nav   
-----------------------------------------------------------*/
-footer nav ul li {
-    display: inline;
-    list-style: none;
-}
-    footer nav ul li a{
-        color: #DAE1E5;
-        font-weight: bold;
-        line-height: 2.8em;
-        text-decoration: none;
-        border-right: 1px solid #DAE1E5;
-        padding:3px;
-    }
-    footer nav ul li.last a{
-        border: none;
-    }
-
-/* forms   
-----------------------------------------------------------*/
-fieldset {
-    margin: 1em 0;
-    padding: 1em;
-    border: 1px solid #CCC;
-}
-
-    fieldset legend {
-        font-size: 1.1em;
-        font-weight: bold;
-        padding: 2px 4px 8px 4px;
-    }
-    
-    fieldset ol {
-        padding: 0;
-        list-style: none;
-    }
-    
-        fieldset ol li {
-            padding-bottom: 5px;
-        }
-    
-    fieldset label {
-        display: block;
-    }
-    
-    fieldset label.checkbox {
-        display: inline;
-    }
-    
-    fieldset input{
-        border: 1px solid #ccc;
-        padding: 2px;
-        font-size: 1.2em;
-        color: #444;
-        width: 300px;
-    }
-
-    fieldset input[type="submit"] {
-        font-size: 1.2em;
-        padding: 5px;
-    }
- 
-form{
-    
-}
-form input{
-    display:block;
-    margin-bottom: 10px;
-}
-form label{
-    float:left
-}
-form textarea{
-    max-height:200px;
-    max-width:600px;
-    width:600px;
-    height: 100px;
-}
  /* Information and errors  
 ----------------------------------------------------------*/  
 .message {
@@ -323,11 +102,6 @@ form textarea{
 .info {
     background: #bde5f8;
     color: #00529b;
-}
-
-.error {
-    background: #ffe4e4;
-    color: #be3e16;
 }
 
 .success {

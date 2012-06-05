@@ -2,15 +2,37 @@
     Layout = "~/_SiteLayout.cshtml";
     Page.Title = "Events";
 }
-<form>
+<link href="@Href("~/Styles/events.css")" rel="stylesheet" />
+<div id="formErrors" class="form-errors form-errors-skin">
+    <h3>Pleae review the following errors:</h3>
+        <ol>
+            <li>
+                <label class="error" for="eName">Please enter a name for your event.</label>
+            </li>
+            <li>
+                <label class="error" for="cName">Please enter the name of who we can contact.</label>
+            </li>
+            <li>
+                <label class="error" for="email">Please enter the email address of where we can reach a contact.</label>
+            </li>
+            <li>
+                 <label class="error" for="tel">Please enter the telephone number as an alternate way of reaching a contact.</label>
+            </li>
+            <li>
+                <label class="error" for="startDate">Please enter the deired data the event should start.</label>
+            </li>
+        </ol>
+</div>
+<form id="addEvent" class="event-form default-form-skin" method="post" action="#">
     <fieldset>
         <legend>Request An Event</legend>
-        <label for="eName">Event Name: </label><input type="text" name="eName" />
-        <label for="cName">Contact Name: </label><input type="text" name="cName" />
-        <label for="email">Contact Email Address: </label><input id="email" type="email" name="email">
-        <label for="tel">Contact Number: </label><input id="tel" type="tel" name="tel" pattern="^(?:\s*)\d{3}-\d{3}-\d{4}(?:\s*)$"/>
-        <label for="startDate">Desired Start Date: </label><input id="startDate" type="date" name="startDate">
-        <label for="endDate">Desired End Date: </label><input id="endDate" type="date" name="endDate">
+        <label for="eName">Event Name: </label><input type="text" name="eName" class="required"/>
+        <label for="cName">Contact Name: </label><input type="text" name="cName" class="required"/>
+        <label for="email">Contact Email Address: </label><input id="email" type="email" name="email" class="required"/>
+        <label for="tel">Contact Number: </label><input id="tel" type="tel" name="tel" pattern="^(?:\s*)\d{3}-\d{3}-\d{4}(?:\s*)$" class="required"/>
+        <label for="startDate">Desired Start Date: </label><input id="startDate" type="date" name="startDate" class="required">
+        <label for="endDate">Desired End Date: </label><input id="endDate" type="date" name="endDate" class="required">
         <label for="eDesc">Event Description: </label><textarea id="eDesc" name="eDesc"></textarea>
+        <input type="submit" value="Submit Request" />
     </fieldset>
 </form>
