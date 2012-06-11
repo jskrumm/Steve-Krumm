@@ -7,13 +7,11 @@
         z-index: 1;
     }
     header h1 {
-        float: left;
         font-weight: bold;
         font-size: 3.000em;
         padding-left: 3.000em;
         margin: 0;
         line-height: 2em;
-        width: 100%;
     }
 /* Skin */
     .header-skin {

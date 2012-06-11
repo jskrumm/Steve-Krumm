@@ -5,18 +5,16 @@
         <title>Beyond Doubt Ministries</title>
         @RenderPage("~/_commonCSS.cshtml")
     </head>
-    <body>
+    <body class="site-skin">
         @RenderPage("~/_header.cshtml")
         <div id="page" class="page page-skin">
              @RenderPage("~/_mainNav.cshtml")
-            <div id="main-img-wrapper">
+            <div id="main-img-wrapper" class="main-img-wrapper">
                 <img src="@Href("~/images/cross.png")" alt=""/>
             </div>
-            <div id="main">
-                <div id="content">
-                    <h2>@Page.Title</h2>
-                    @RenderBody()
-                </div>
+            <div id="content" class="content content-skin">
+                <h2>@Page.Title</h2>
+                @RenderBody()
             </div>
         </div>
         @RenderPage("~/_footer.cshtml")

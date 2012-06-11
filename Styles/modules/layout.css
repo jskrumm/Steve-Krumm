@@ -1,0 +1,65 @@
+/*structure*/
+body {
+    font-size: .85em;
+    font-family: 'IM Fell English', serif, Sans-Serif, "Trebuchet MS", Verdana, Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -12.500em;
+    position: relative;
+    width: 80%;
+    z-index: 1000;
+}
+.main-img-wrapper {
+    margin-left: -6.250em;
+    margin-top: -5.000em;
+    z-index: 1001;
+}
+.content {
+  height: 80%;
+  margin-bottom: 1.875em;
+  margin-top: -48.7em;
+  min-height: 43.750em;
+  padding: 3.125em 1.875em 3.125em 17em;
+}
+    .content h2{
+        margin-bottom: 7em;
+    }
+/* skin */
+.site-skin {
+    color: #696969;
+    background-color: #B1C349;
+}
+
+a:link {
+    color: #034af3;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #505abc;
+}
+.content-skin {
+    background-color: #FFFFFF;
+    border-radius: 0.500em 0.500em 0.500em 0.500em;
+    box-shadow: 0 0.250em 0.625em 0 rgba(0, 0, 0, 0.25);
+}
