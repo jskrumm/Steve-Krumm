@@ -4,3 +4,9 @@
 @import url('/Styles/modules/headings.css');
 @import url('/Styles/modules/site-nav.css');
 /*@import url('/Styles/modules/reset.css');*/
+/* IPad */
+@media only screen and (device-width: 768px){
+.main-img-wrapper {
+    display:none;
+ }
+}

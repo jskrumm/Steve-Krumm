@@ -25,3 +25,19 @@
         border: none;
         text-shadow: 0.063em 0.063em 0.125em #111;
     }
+
+@media (max-width: 1024px) {
+     header h1 {
+
+        padding-left: 2.5em;
+    }
+
+}
+
+@media (max-width: 768px) {
+     header h1 {
+
+        padding-left: 2em;
+    }
+
+}
