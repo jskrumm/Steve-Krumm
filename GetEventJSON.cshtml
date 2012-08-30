@@ -1,0 +1,7 @@
+﻿@{
+    var db = Database.Open("BDM");
+    var sql = @"SELECT * FROM Events";
+    var data = db.Query(sql);
+
+    Json.Write(data, Response.Output);
+}

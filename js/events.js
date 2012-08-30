@@ -1,22 +1,26 @@
-(function ($) {
+(function($) {
     /*$("addEvent").submit(function(){
-        $.post(
-            "form.cshtml",
-            $(this).serialize(), 
-            function(data){
+    $.post(
+    "form.cshtml",
+    $(this).serialize(), 
+    function(data){
                 
-            }
-        );
-        return false;
+    }
+    );
+    return false;
     });*/
-    
+
     $("#addEvent").validate({
         submitHandler: function(form) {
             form.submit();
         },
         errorContainer: $("#formErrors"),
-        errorLabelContainer: $("ol",  $("#formErrors")),
+        errorLabelContainer: $("ol", $("#formErrors")),
         wrapper: 'li',
-        meta: "validate" 
+        meta: "validate"
     });
- })(jQuery);
+
+    $.getJSON('/GetEventJSON/', function(data) {
+        console.log(data);
+    });
+})(jQuery);
