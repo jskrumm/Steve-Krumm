@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     /*$("addEvent").submit(function(){
     $.post(
     "form.cshtml",
@@ -11,7 +11,7 @@
     });*/
 
     $("#addEvent").validate({
-        submitHandler: function(form) {
+        submitHandler: function (form) {
             form.submit();
         },
         errorContainer: $("#formErrors"),
@@ -20,7 +20,15 @@
         meta: "validate"
     });
 
-    $.getJSON('/GetEventJSON/', function(data) {
+    $.getJSON('/GetEventJSON/', function (data) {
         console.log(data);
+        console.log(data[3]);
+        console.log(data.StartDate);
+        console.log(formatJSONDate(Date(data.Start_Date)));
     });
+
+    function formatJSONDate(jsonDate) {
+        var date = new Date(parseInt(jsonDate.substr(6)));
+        return date;
+    }
 })(jQuery);

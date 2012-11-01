@@ -1,0 +1,26 @@
+.audio-player {
+    width: 300px;
+    background-color: #3C3C3C;
+    border: 2px solid #1b1b1b;
+}
+    .audio-player .status,
+    .audio-player .selected-track{
+        text-align: center;
+        color: #cdcdcd;
+    }
+    .audio-player .tracks{
+        background-color: #3c3c3c;
+        margin-top: -5px;
+    }
+        .audio-player .tracks li {
+            border-bottom: 1px solid #f1f1f1;
+            padding-left: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .audio-player .tracks li.last {
+            border: none;
+        }
+            .audio-player .tracks li a{
+                color: #f1f1f1;
+            }
