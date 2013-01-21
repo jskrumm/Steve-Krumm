@@ -5,6 +5,34 @@
         nav ul li a{
             line-height: 2.8em;
         }
+    /* Mobile Navigation */
+    .mobile-nav {
+        display: none;
+    }
+    @media only screen and (max-width: 480px) {
+        .page nav {
+            display: none;
+        } 
+        .mobile-nav {
+            display: block;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+            .menu-button {
+                float: right;
+            }
+            .mobile-nav nav {
+                height: 1000px;
+                position: absolute;
+                right: 0;
+                top: 50px;
+            }
+                .mobile-nav nav ul li {
+                    display: block;
+                }
+    }
     /* Primary Navigation */
     .page nav ul {
         line-height: 6em;
@@ -36,6 +64,10 @@
     .nav-skin ul li a {
          font-weight: bold;
          text-decoration: none;
+    }
+    /* Mobile Navigation */
+    .mobile-nav {
+        background-color: #B1C349;
     }
     /* Primary Navigation */
     .page-skin nav ul li {

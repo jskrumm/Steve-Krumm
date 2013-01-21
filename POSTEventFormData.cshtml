@@ -1,17 +1,18 @@
 ﻿@{
     if(IsPost){
         var db = Database.Open("BDM");
-        var eventsSql = "INSERT INTO Events (Name, Start Date, End Date, Description) VALUES (@0, @1, @2, @3, @4)";
+        var eventsSql = "INSERT INTO Events (Name, [Start Date], [End Date], Description) VALUES (@0, @1, @2, @3)";
         var eventName = Request["eName"];
         var startDate = Request["startDate"];
         var endDate = Request["endDate"];
         var description = Request["eDesc"];
         db.Execute(eventsSql, eventName, startDate, endDate, description);
 
-        var contactSql = "INSERT INTO [Contact Info] (Name, Email Address, Phone Number) VALUES (@0, @1, @2)";
+        var contactSql = "INSERT INTO [Contact Info] ([Event ID], Name, [Email Address], [Phone Number]) VALUES (@0, @1, @2, @3)";
+        var eventID = db.GetLastInsertId();
         var contactName = Request["cName"];
         var emailAddress = Request["email"];
         var phoneNumber = Request["tel"];
-        db.Execute(contactSql, contactName, emailAddress, phoneNumber);
+        db.Execute(contactSql, eventID, contactName, emailAddress, phoneNumber);
     }
 }
