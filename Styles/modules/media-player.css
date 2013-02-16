@@ -1,5 +1,5 @@
 .audio-player {
-    width: 300px;
+    width: 22em;
     background-color: #3C3C3C;
     border: 2px solid #1b1b1b;
 }
@@ -7,6 +7,9 @@
     .audio-player .selected-track{
         text-align: center;
         color: #cdcdcd;
+    }
+    .audio-player audio {
+        width: inherit;
     }
     .audio-player .tracks{
         background-color: #3c3c3c;
@@ -24,3 +27,8 @@
             .audio-player .tracks li a{
                 color: #f1f1f1;
             }
+@media (max-width: 480px) {
+    .audio-player {
+        width: 100%;
+    }
+}

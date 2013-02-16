@@ -80,3 +80,14 @@ a:active {
             margin-bottom: 0;
         }
 }
+
+@media (max-width: 480px) {
+    .page {
+        margin-top: -7em;
+    }
+    .content {
+        margin-top: 0;
+        min-height: 0;
+        padding: 1em;
+    }
+}

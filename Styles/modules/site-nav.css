@@ -22,15 +22,19 @@
         }
             .menu-button {
                 float: right;
+                padding: 16px;
             }
             .mobile-nav nav {
+                background-color: #696969;
                 height: 1000px;
                 position: absolute;
-                right: 0;
-                top: 50px;
+                right: -200px;
+                width: 35%;
+                z-index: 2000;
             }
                 .mobile-nav nav ul li {
                     display: block;
+                    padding: 15px;
                 }
     }
     /* Primary Navigation */
